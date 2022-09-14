@@ -1,0 +1,23 @@
+CREATE TABLE feed_store (id INTEGER PRIMARY KEY, name TEXT, variety TEXT, flavor TEXT, weight INTEGER, price INTEGER);
+
+
+INSERT INTO feed_store VALUES (1,"Adult Dog Food","wet food","chicken", 25.5,49.99);
+INSERT INTO feed_store VALUES (2,"Adult Dog Food","dry food","chicken", 25.5,29.99);
+INSERT INTO feed_store VALUES (3,"Senior Dog Food","wet food","chicken", 25.5,49.99);
+INSERT INTO feed_store VALUES (4,"Senior Dog Food","dry food","chicken", 25.5,29.99);
+INSERT INTO feed_store VALUES (5,"Puppy Dog Food","wet food","chicken", 25.5,49.99);
+INSERT INTO feed_store VALUES (6,"Puppy Dog Food","dry food","chicken", 25.5,29.99);
+INSERT INTO feed_store VALUES (7,"Adult Cat Food","wet food","chicken", 25.5,49.99);
+INSERT INTO feed_store VALUES (8,"Adult Cat Food","dry food","chicken", 25.5,29.99);
+INSERT INTO feed_store VALUES (9,"Kitten Cat Food","wet food","chicken", 25.5,49.99);
+INSERT INTO feed_store VALUES (10,"Kitten Cat Food","dry food","chicken", 25.5,29.99);
+INSERT INTO feed_store VALUES (11,"Bird Seed Food","dry food","variety", 25.5,19.99);
+INSERT INTO feed_store VALUES (12,"Bird Seed Food","dry food","sunflower", 25.5,19.99);
+INSERT INTO feed_store VALUES (13,"Fish Pellet Food","dry food","variety", 25.5,15.99);
+INSERT INTO feed_store VALUES (14,"Gerbil_Hamster Pellet","dry food","variety", 25.5,17.99);
+INSERT INTO feed_store VALUES (15,"Rabbit Pellet Food","dry food","chicken", 25.5,17.99);
+
+SELECT * from feed_store order by price;
+SELECT name, SUM(PRICE) from feed_store group by name;
+
+
